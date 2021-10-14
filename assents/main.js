@@ -37,27 +37,49 @@ else {
 
 
 //Gioco dei dadi
+
+//definizioni delle variabili
 const bottone = document.getElementById("click");
-bottone.addEventListener('click', functionPlayer);
-bottone.addEventListener('click', functionComputer);
-function functionPlayer() {
-    document.querySelector(".score_player").innerHTML = Math.floor((Math.random() * 6) + 1)
+const result = document.querySelector(".result")
+let scorePlayer
+let scoreComputer
+
+//funzione al click del bottone
+
+bottone.addEventListener('click', scoreFunction);
+function scoreFunction() {
+
+    //generazione risultato tiro del giocatore
+
+    scorePlayer = Math.round((Math.random() * 6) + 1);
+    document.querySelector(".score_player").innerHTML = (scorePlayer)
+    console.log("player " + scorePlayer);
+
+    //generazione risultato tiro computer
+
+    scoreComputer = Math.round((Math.random() * 6) + 1);
+    document.querySelector(".score_computer").innerHTML = (scoreComputer)
+    console.log("computer " + scoreComputer);
+
+    //condizioni per la visualizzazione del risultato 
+
+    if (scoreComputer > scorePlayer) {
+        result.innerHTML = ("Il Computer!")
+        console.log("ha vinto il pc")
+    }
+    else if (scoreComputer < scorePlayer) {
+        result.innerHTML = ("Il Giocatore!")
+        console.log("giocatore vince")
+    }
+    else {
+        result.innerHTML = ("Nessuno, parità!")
+        console.log("pareggio")
+    }
 }
-function functionComputer() {
-    document.querySelector(".score_computer").innerHTML = Math.floor((Math.random() * 6) + 1)
-}
-
-    /* console.log("vediamo se funziona") */
 
 
-//Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-//Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-//al click genera un numero casuale per il giocatore
 
-//al click genera un numero casuale per il pc
-
-//inserire condizioni per stampare vincitore su schermo
 
 
 
