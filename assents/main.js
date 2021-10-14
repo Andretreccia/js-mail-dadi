@@ -36,9 +36,21 @@ else {
 
 
 
-
-
 //Gioco dei dadi
+const bottone = document.getElementById("click");
+bottone.addEventListener("click", function () {
+    /* console.log("vediamo se funziona") */
+});
+
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+//al click genera un numero casuale per il giocatore
+
+//al click genera un numero casuale per il pc
+
+//inserire condizioni per stampare vincitore su schermo
+
+
+
 
