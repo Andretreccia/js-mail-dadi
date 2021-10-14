@@ -5,15 +5,22 @@ const registeredMail = ["1@gmail.com", "2@gmail.com", "3@gmail.com", "4@gmail.co
 /* console.log(registeredMail); */
     //chiedere all utente la propria mail
 const userMail = prompt("Inserisci qui la tua mail")
-console.log(userMail)
+/* console.log(userMail) */
+
     //verificare che la mail inseritra dall utente sia presente in archivio
+let validate = 0
 for (let i = 0; i <= registeredMail.length; i++) {
     if (userMail == registeredMail[i]) {
-        console.log("esiste")
+        validate++
+        console.log(validate)
     }
-    else if (userMail != registeredMail[i]) {
-        console.log("non esiste")
-    }
+
+}
+if (validate == 0) {
+    console.log("non esiste")
+}
+else {
+    console.log("esite!")
 }
         //determinare due condizioni e rispettivi eventi
 
