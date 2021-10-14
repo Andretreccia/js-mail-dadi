@@ -2,13 +2,18 @@
 
     //creare archivio mail
 const registeredMail = ["1@gmail.com", "2@gmail.com", "3@gmail.com", "4@gmail.com"]
-console.log(registeredMail);
+/* console.log(registeredMail); */
     //chiedere all utente la propria mail
 const userMail = prompt("Inserisci qui la tua mail")
 console.log(userMail)
     //verificare che la mail inseritra dall utente sia presente in archivio
 for (let i = 0; i <= registeredMail.length; i++) {
-
+    if (userMail == registeredMail[i]) {
+        console.log("esiste")
+    }
+    else if (userMail != registeredMail[i]) {
+        console.log("non esiste")
+    }
 }
         //determinare due condizioni e rispettivi eventi
 
