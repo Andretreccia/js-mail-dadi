@@ -1,5 +1,12 @@
 //Mail
-//Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
+
+    //creare archivio mail
+    //chiedere all utente la propria mail
+    //verificare che la mail inseritra dall utente sia presente in archivio
+        //determinare due condizioni e rispettivi eventi
+
+
+
 
 
 
