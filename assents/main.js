@@ -51,13 +51,13 @@ function scoreFunction() {
 
     //generazione risultato tiro del giocatore
 
-    scorePlayer = Math.round((Math.random() * 6) + 1);
+    scorePlayer = Math.round((Math.random() * 5) + 1);
     document.querySelector(".score_player").innerHTML = (scorePlayer)
     console.log("player " + scorePlayer);
 
     //generazione risultato tiro computer
 
-    scoreComputer = Math.round((Math.random() * 6) + 1);
+    scoreComputer = Math.round((Math.random() * 5) + 1);
     document.querySelector(".score_computer").innerHTML = (scoreComputer)
     console.log("computer " + scoreComputer);
 
