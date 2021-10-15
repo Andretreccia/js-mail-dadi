@@ -1,6 +1,6 @@
 //Mail
 
-    //creare archivio mail
+//creare archivio mail
 const registeredMail = ["1@gmail.com",
     "2@gmail.com",
     "3@gmail.com",
@@ -9,11 +9,11 @@ const registeredMail = ["1@gmail.com",
     "6@gmail.com",
     "7@gmail.com"]
 /* console.log(registeredMail); */
-    //chiedere all utente la propria mail
+//chiedere all utente la propria mail
 const userMail = prompt("Inserisci qui la tua mail")
 /* console.log(userMail) */
 
-    //verificare che la mail inseritra dall utente sia presente in archivio
+//verificare che la mail inseritra dall utente sia presente in archivio
 let validate = 0
 for (let i = 0; i <= registeredMail.length; i++) {
     if (userMail == registeredMail[i]) {
